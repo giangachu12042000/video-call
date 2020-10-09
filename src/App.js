@@ -10,7 +10,7 @@ class App extends Component {
   }
  
   render(){
-    const constraint = { audio: true, video: { facingMode: { exact: "environment" } } }
+    const constraint = { audio: true, video: true }
 
     const success = (stream)=>{
       this.localVideoRef.current.srcObject = stream
